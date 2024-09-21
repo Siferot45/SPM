@@ -2,6 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using SPM.Storage.Context;
 using SPM.Web.Client.Pages;
 using SPM.Web.Components;
+using SPM.Domain.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
+
+//DI
+builder.Services.AddDomainDI();
 
 builder.Services.AddDbContext<DbSPMContext>(options =>
 {
