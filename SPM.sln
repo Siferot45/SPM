@@ -22,6 +22,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Domain.Tests", "SPM.Dom
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Domain.DependencyInjection", "SPM.Domain.DependencyInjection\SPM.Domain.DependencyInjection.csproj", "{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Storage.DependencyInjection", "SPM.Storage.DependencyInjection\SPM.Storage.DependencyInjection.csproj", "{E6D397B8-5B68-4396-BFF0-2239E9A7F317}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6D397B8-5B68-4396-BFF0-2239E9A7F317}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6D397B8-5B68-4396-BFF0-2239E9A7F317}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6D397B8-5B68-4396-BFF0-2239E9A7F317}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6D397B8-5B68-4396-BFF0-2239E9A7F317}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +69,7 @@ Global
 		{47341A0B-16F6-4DA4-8959-5D74977536C8} = {DF7DA076-808A-46AF-AA24-2FFE0C07CADD}
 		{AA9DF0E4-7AD4-4B86-867B-E1223CB977FC} = {DF7DA076-808A-46AF-AA24-2FFE0C07CADD}
 		{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152} = {DF7DA076-808A-46AF-AA24-2FFE0C07CADD}
+		{E6D397B8-5B68-4396-BFF0-2239E9A7F317} = {DF7DA076-808A-46AF-AA24-2FFE0C07CADD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DA9E014B-730C-422B-99FE-3435535ECFA2}

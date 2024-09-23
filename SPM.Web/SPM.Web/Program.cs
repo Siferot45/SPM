@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using SPM.Storage.Context;
 using SPM.Web.Client.Pages;
 using SPM.Web.Components;
 using SPM.Domain.DependencyInjection;
+using SPM.Storage.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +13,9 @@ builder.Services.AddRazorComponents()
 
 //DI
 builder.Services.AddDomainDI();
+builder.Services.AddStorageDI(builder.Configuration.GetConnectionString("postgre"));
 
-builder.Services.AddDbContext<DbSPMContext>(options =>
-{
-    options.UseNpgsql(builder.Configuration.GetConnectionString("postgre"));
-});
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

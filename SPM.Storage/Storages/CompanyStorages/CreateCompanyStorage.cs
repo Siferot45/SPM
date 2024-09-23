@@ -1,4 +1,5 @@
-﻿using SPM.Domain.ModelDto;
+﻿using Microsoft.EntityFrameworkCore;
+using SPM.Domain.ModelDto;
 using SPM.Domain.UseCases.CompanyUseCases;
 using SPM.Storage.Context;
 using SPM.Storage.Model.Entities;
@@ -22,7 +23,11 @@ public class CreateCompanyStorage(DbSPMContext dbContext, IGuidFactory guidFacto
 
         await _dbContext.Companies.AddAsync(company, cancellationToken).ConfigureAwait(false);
         await _dbContext.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
-        //TODO подхачить
-        return new CompanyDto(companyId, name);
+        
+        return await _dbContext.Companies
+            .Where(c => c.CompanyId == companyId)
+            .Select(c => new CompanyDto(companyId, name))
+            .FirstAsync(cancellationToken)
+            .ConfigureAwait(false);
     }
 }

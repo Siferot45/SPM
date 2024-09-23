@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\SPM.Domain.DependencyInjection\SPM.Domain.DependencyInjection.csproj" />
-    <ProjectReference Include="..\..\SPM.Storage\SPM.Storage.csproj" />
+    <ProjectReference Include="..\..\SPM.Storage.DependencyInjection\SPM.Storage.DependencyInjection.csproj" />
     <ProjectReference Include="..\SPM.Web.Client\SPM.Web.Client.csproj" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="8.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
