@@ -1,11 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using SPM.Web.Client.Pages;
-using SPM.Web.Components;
 using SPM.Domain.DependencyInjection;
 using SPM.Storage.DependencyInjection;
+using SPM.Web.Client;
+using SPM.Web.Components;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddControllers();
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
@@ -39,5 +40,7 @@ app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
     .AddInteractiveWebAssemblyRenderMode()
     .AddAdditionalAssemblies(typeof(SPM.Web.Client._Imports).Assembly);
+
+app.MapControllers();
 
 app.Run();

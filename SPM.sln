@@ -16,13 +16,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Web", "SPM.Web\SPM.Web\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Web.Client", "SPM.Web\SPM.Web.Client\SPM.Web.Client.csproj", "{3A5F2DB7-CD8B-4296-A009-ECDFEECBD956}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Domain", "SPM.Domain\SPM.Domain.csproj", "{47341A0B-16F6-4DA4-8959-5D74977536C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Domain", "SPM.Domain\SPM.Domain.csproj", "{47341A0B-16F6-4DA4-8959-5D74977536C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Domain.Tests", "SPM.Domain.Tests\SPM.Domain.Tests.csproj", "{AA9DF0E4-7AD4-4B86-867B-E1223CB977FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Domain.Tests", "SPM.Domain.Tests\SPM.Domain.Tests.csproj", "{AA9DF0E4-7AD4-4B86-867B-E1223CB977FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Domain.DependencyInjection", "SPM.Domain.DependencyInjection\SPM.Domain.DependencyInjection.csproj", "{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Domain.DependencyInjection", "SPM.Domain.DependencyInjection\SPM.Domain.DependencyInjection.csproj", "{BD82BEFB-10BE-4F3D-A8FC-DE55C180A152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPM.Storage.DependencyInjection", "SPM.Storage.DependencyInjection\SPM.Storage.DependencyInjection.csproj", "{E6D397B8-5B68-4396-BFF0-2239E9A7F317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SPM.Storage.DependencyInjection", "SPM.Storage.DependencyInjection\SPM.Storage.DependencyInjection.csproj", "{E6D397B8-5B68-4396-BFF0-2239E9A7F317}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SPM.Domain.DependencyInjection\SPM.Domain.DependencyInjection.csproj" />
+    <ProjectReference Include="..\SPM.Domain\SPM.Domain.csproj" />
+    <ProjectReference Include="..\SPM.Storage.DependencyInjection\SPM.Storage.DependencyInjection.csproj" />
+  </ItemGroup>
+
+</Project>

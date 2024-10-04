@@ -22,8 +22,8 @@ public class CreateCompanyStorage(DbSPMContext dbContext, IGuidFactory guidFacto
         };
 
         await _dbContext.Companies.AddAsync(company, cancellationToken).ConfigureAwait(false);
-        await _dbContext.SaveChangesAsync(cancellationToken).ConfigureAwait(false);
-        
+        await _dbContext.SaveChangesAsync(cancellationToken);
+
         return await _dbContext.Companies
             .Where(c => c.CompanyId == companyId)
             .Select(c => new CompanyDto(companyId, name))

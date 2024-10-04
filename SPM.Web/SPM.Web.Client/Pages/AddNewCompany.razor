@@ -1,0 +1,41 @@
+﻿@page "/add"
+@inject HttpClient Http
+@rendermode @(new InteractiveWebAssemblyRenderMode(prerender:false))
+@inject NavigationManager NavigationManager
+
+<h3>Addnewcompany</h3>
+
+<PageTitle>create</PageTitle>
+
+<hr/>
+
+<form>
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                 <label for="Name" class="control-label">Название компании</label>
+                 <input for="Name" class="form-control" @bind="@companyDto.Name" />
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@CreateCompany" value="Save"/>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@code {
+    protected CreateCompanyDto companyDto = new();
+    protected override async Task OnParametersSetAsync()
+    {
+        companyDto = await Http.GetFromJsonAsync<CreateCompanyDto>("api/Company/");
+    }
+    protected async Task CreateCompany()
+    {
+        await Http.PostAsJsonAsync("api/Company", companyDto);
+    }
+}

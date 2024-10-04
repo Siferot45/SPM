@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using SPM.Domain.UseCases.CompanyUseCases;
 using SPM.Storage.Context;
+using SPM.Storage.Storages;
 using SPM.Storage.Storages.CompanyStorages;
 
 namespace SPM.Storage.DependencyInjection;
@@ -12,13 +13,14 @@ public static class ServiceCollectionExtension
     {
         services
             .AddScoped<ICreateCompanyStorage, CreateCompanyStorage>()
+            .AddScoped<IGuidFactory, GuidFactory>()
             ;
         
         services
             .AddDbContext<DbSPMContext>(options =>
             {
                 options.UseNpgsql(connectionString);
-                options.UseSnakeCaseNamingConvention();
+                //options.UseSnakeCaseNamingConvention();
             });
 
         return services;

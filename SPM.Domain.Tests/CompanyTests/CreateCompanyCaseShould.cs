@@ -8,7 +8,7 @@ public class CreateCompanyCaseShould
 
     public CreateCompanyCaseShould()
     {
-        sut = new CreateCompanyCase();
+        //sut = new CreateCompanyCase();
     }
     [Fact]
     public async Task ReturnCreateCompany()
