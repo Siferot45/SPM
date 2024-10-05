@@ -1,6 +1,6 @@
 ﻿namespace SPM.Domain.ModelDto;
 
-public record CompanyDto(Guid Id, string Name);
+public record struct CompanyDto(Guid Id, string Name);
 
 
 

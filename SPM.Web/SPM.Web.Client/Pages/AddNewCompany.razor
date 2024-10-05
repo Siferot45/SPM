@@ -1,11 +1,11 @@
-﻿@page "/add"
+﻿@page "/addCompany"
 @inject HttpClient Http
 @rendermode @(new InteractiveWebAssemblyRenderMode(prerender:false))
 @inject NavigationManager NavigationManager
 
-<h3>Addnewcompany</h3>
+<PageTitle>Create</PageTitle>
 
-<PageTitle>create</PageTitle>
+<h1>Создание новой компании</h1>
 
 <hr/>
 
@@ -21,7 +21,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class="form-group">
-                <input type="button" class="btn btn-primary" @onclick="@CreateCompany" value="Save"/>
+                <input type="button" class="btn btn-primary" @onclick="@CreateCompany" value="Сохранить"/>
             </div>
         </div>
     </div>
@@ -29,6 +29,7 @@
 
 
 @code {
+    //TODO page title
     protected CreateCompanyDto companyDto = new();
     protected override async Task OnParametersSetAsync()
     {
