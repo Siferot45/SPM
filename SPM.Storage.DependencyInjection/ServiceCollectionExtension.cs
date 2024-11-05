@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using SPM.Domain.UseCases.CompanyUseCases;
+using SPM.Domain.UseCases.CompanyUseCases.Create;
+using SPM.Domain.UseCases.CompanyUseCases.Get;
 using SPM.Storage.Context;
 using SPM.Storage.Storages;
 using SPM.Storage.Storages.CompanyStorages;
@@ -13,6 +14,7 @@ public static class ServiceCollectionExtension
     {
         services
             .AddScoped<ICreateCompanyStorage, CreateCompanyStorage>()
+            .AddScoped<IGetCompanyStorage, GetCompanyStorage>()
             .AddScoped<IGuidFactory, GuidFactory>()
             ;
         

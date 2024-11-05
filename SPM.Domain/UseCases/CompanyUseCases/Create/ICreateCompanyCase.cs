@@ -1,6 +1,6 @@
 ﻿using SPM.Domain.ModelDto;
 
-namespace SPM.Domain.UseCases.CompanyUseCases;
+namespace SPM.Domain.UseCases.CompanyUseCases.Create;
 
 public interface ICreateCompanyCase
 {

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SPM.Domain.ModelDto;
-using SPM.Domain.UseCases.CompanyUseCases;
+using SPM.Domain.UseCases.CompanyUseCases.Create;
 using SPM.Storage.Context;
 using SPM.Storage.Model.Entities;
 

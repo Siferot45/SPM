@@ -1,7 +1,7 @@
 ﻿using FluentAssertions;
 using Moq;
 using SPM.Domain.ModelDto;
-using SPM.Domain.UseCases.CompanyUseCases;
+using SPM.Domain.UseCases.CompanyUseCases.Create;
 
 namespace SPM.Domain.Tests.CompanyTests;
 

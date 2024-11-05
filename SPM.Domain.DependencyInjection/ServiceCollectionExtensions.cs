@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using SPM.Domain.UseCases.CompanyUseCases;
+using SPM.Domain.UseCases.CompanyUseCases.Create;
 
 namespace SPM.Domain.DependencyInjection;
 
